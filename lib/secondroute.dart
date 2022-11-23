@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interaccion_dospaginas/thirdroute.dart';
 class SecondRoute extends StatelessWidget {
 
   @override   Widget build(BuildContext context) {
@@ -7,20 +8,27 @@ class SecondRoute extends StatelessWidget {
 
      appBar: AppBar(
 
-       title: Text("Second Route"),   ),
+       title: Text("Pantalla Principal"),   ),
 
     body: Center(
 
        child: ElevatedButton(
 
          onPressed: () {
+          Navigator.push(
 
-         // Regresa a la primera ruta cuando se pulsa.
-         //
-                   },
+            context,
+
+            MaterialPageRoute(builder: (context) => ThirdRoute()),
+
+          );
+
+        
+    
+      },
     
 
-      child: Text('Go back!'),
+      child: Text('Login'),
 
         ),
 

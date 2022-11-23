@@ -8,7 +8,7 @@ class FirstRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Route'),      
+        title: Text('Home'),      
       ),
 
      body: Center(
